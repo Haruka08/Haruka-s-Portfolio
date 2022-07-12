@@ -21,7 +21,6 @@ body {
 
 a {
     color: var(--darkblue,darkblue);
-    padding: 5px;
 }
 
 .main-header {
@@ -50,6 +49,10 @@ header menu li {
     margin: 15px;
 }
 
+header menu li:hover {
+    background-color: aquamarine;
+}
+
 section h2 {
     display: block;
     background-color: var(--lightblue,lightblue);
@@ -63,21 +66,19 @@ section p {
 
 .about-me {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 .about-me p {
     flex: 0 0 auto;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-height: 300px;
-    margin: 20px;
+    max-width: 70%;
+    max-height: 400px;
+    margin: 10px;
     line-height: 2;
 }
 .about-me img {
     flex: 0 0 auto;
-    flex-wrap: wrap;
-    justify-content: space-between;
     max-width: 200px;
     max-height: 300px;
     margin: 10px;
@@ -86,32 +87,38 @@ section p {
 
 .article {
     display: inline-flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: space-between;
     position: relative;
-    text-align: center;
-    text-align: center;
+    margin: 10px;
+    opacity: 50%;
 }
 
-.article.small {
+.article:hover {
+    opacity: 100%;
+    box-shadow: 8px 10px 10px 2px grey;
+    margin: 5px
+}
+
+.article img {
     object-fit: cover;
     width: 482px;
     height: 300px;
-    margin: 10px;
     border: 2px solid var(--darkblue,darkblue);
+
 }
 
-.article.large {
+.article.large img {
     object-fit: cover;
     width: 1000px;
     height: 300px;
-    margin: 10px;
     border: 2px solid var(--darkblue,darkblue);
+
 }
 
 .article h3 {
     position: absolute;
-    bottom: 22px;
+    bottom: 20px;
     left: 20px;
     padding: 10px;
     border: 5px solid var(--darkblue,darkblue);
@@ -122,23 +129,21 @@ section p {
 footer {
     text-align: center;
     display: block;
-    padding: 10px;
-    margin: 10px;
+    line-height: 1.5;
 }
 
-@media screen and (max-width: 768px){
-    .article {
+@media screen and (max-width: 1030px){
+    .article.large img {
         flex-direction: column;
         object-fit: cover;
-        width: 450px;
+        width: 482px;
+        max-width:fit-content;
         height: 300px;
     }
 }
 
 @media screen and (max-width: 768px){
-    main,
-    section,
-    div {
+.about-me {
         flex-direction: column;
     }
 }
