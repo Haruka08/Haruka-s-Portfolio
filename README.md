@@ -3,9 +3,9 @@ Website to showcase my web development projects
 
 ## Links to the webpage and repository
 
-To access the website use [Haruka's Portfolio](https://haruka08.github.io/first-day-repo/)
+To access the website use [Haruka's Portfolio](https://haruka08.github.io/Harukas-Portfolio/)
 
-To access the GitHub repository use [GitHub Repository Haruka-s-portfolio](https://github.com/Haruka08/first-day-repo.git)
+To access the GitHub repository use [GitHub Repository Haruka-s-portfolio](https://github.com/Haruka08/Harukas-Portfolio)
 
 ## Content
 
@@ -31,11 +31,11 @@ The website consists of following 3 sections:
 
 Following list of menues located at the header are hyperlinks and it will navigate to the corresponding sections within body element of the page.
 
-- [About me](https://haruka08.github.io/first-day-repo/#search-engine-optimization)
+- [About me](https://haruka08.github.io/Harukas-Portfolio/#about-me)
 
-- [Work](https://haruka08.github.io/first-day-repo/#online-reputation-management)
+- [Work](https://haruka08.github.io/Harukas-Portfolio/#work)
 
-- [Contact](https://haruka08.github.io/first-day-repo/#social-media-marketing)
+- [Contact](https://haruka08.github.io/Harukas-Portfolio/#contact)
 
 ## Screenshot of the modified website
 
@@ -63,4 +63,4 @@ Following list of menues located at the header are hyperlinks and it will naviga
 
 - LinkedIn: https://www.linkedin.com/in/haruka-h-587b41100
 
-- CV: ./assets/Haruka-Hashimoto-DOC.pdf
+- ![CV]: (./assets/Haruka-Hashimoto-DOC.pdf)
