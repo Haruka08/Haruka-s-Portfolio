@@ -63,4 +63,4 @@ Following list of menues located at the header are hyperlinks and it will naviga
 
 - LinkedIn: https://www.linkedin.com/in/haruka-h-587b41100
 
-- ![CV]: (./assets/Haruka-Hashimoto-DOC.pdf)
+- ![CV:](./assets/haruka-cv.jpg)
