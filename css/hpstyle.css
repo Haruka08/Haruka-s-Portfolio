@@ -113,7 +113,7 @@
         height: 300px;
         border: 2px solid var(--darkblue, darkblue);
         margin: 10px;
-        opacity:
+        opacity: 50%;
     }
 
     /* settings for each projects/works title for class=large */
