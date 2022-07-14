@@ -4,121 +4,122 @@
 <head>
   <meta charset="UTF-8" />
   <title>Haruka's Portfolio</title>
-  <link rel="stylesheet" href="./css/hpstyle.css"/>
-  <!-- following link to be clarified -->
-    <!-- <link rel="stylesheet" href="./css/hpreset.css" /> -->
-  </head>
+  <link rel="stylesheet" href="./css/hpstyle2.css"/>
+</head>
 
 <body>
-  <header class="main-header">
-    <h1>Haruka's Portfolio</h1>
-      <menu>
-        <ul>
-          <li>
-            <a href="#About-me">About me</a>
-          </li>
-          <li>
-            <a href="#Work">Work</a>
-          </li>
-          <li>
-            <a href="#Contact">Contact</a>
-          </li>
-        </ul>
-      </menu>
-  </header>
+    <!-- main header containing the website title and list of contents -->
+    <header id="main-header">
+        <h1>Haruka's Portfolio</h1>
+            <ul>
+                <li>
+                <a href="#About-me">About me</a>
+                </li>
+                <li>
+                <a href="#Work">Work</a>
+                </li>
+                <li>
+                <a href="#Contact">Contact</a>
+                </li>
+            </ul>
+    </header>
 
-  <main>
-    <section id="About-me">
-      <h2>About me</h2>
-      <div class="about-me">
-        <P>
-          Hi! Welcome to my portfolio, my name is Haruka.
-          I'm from Japan but spend over 20 years in the UK studying and working in automotive industry.
-          Since having a taste of programming through work using Microsoft Excel and VBA etc. I found myself enjoying the process and feeling exhilarated when the program worked as I intended!
-          This inspired me to enroll myself onto a coding bootcamp to learn the trade in detail!
-          I'm new to web development but I love problem solving and I will tackle any bugs with enthusiasm!
+    <!-- main content of the website comprised of 3 sections -->
+    <main id="main-content">
+        <!-- first section within main content -->
+        <h2 class="sub-header" id="About-me">About me</h2>
+        <P id="intro">
+            Hi! Welcome to my portfolio, my name is Haruka.
+            I'm from Japan but spend over 20 years in the UK studying and working in automotive industry.
+            Since having a taste of programming through work using Microsoft Excel and VBA etc. I found myself enjoying the process and feeling exhilarated when the program worked as I intended!
+            This inspired me to enroll myself onto a coding bootcamp to learn the trade in detail!
+            I'm new to web development but I love problem solving and I will tackle any bugs with enthusiasm!
         </P>
-        <img 
-          src="./assets/haruka-photo.jpg"
-          alt="Photo of Haruka"
+        <img id="profile-photo"
+            src="./assets/haruka-photo.jpg"
+            alt="Photo of Haruka"
         />
-      </div>
-    </section>
 
-    <section id="Work">
-      <h2>Work</h2>
+        <!-- second section within main content -->
+        <h2 class="sub-header" id="Work">Work</h2>
 
-      <div  class="article large">
-        <a href="https://haruka08.github.io/first-day-repo/">
-          <h3>Horiseon</h3>
-          <img
-          src="./assets/screenshot1.jpg"
-          alt="Image of Horiseon Website"
-          />
-        </a>
-      </div>  
+        <!-- sub section within "Work" section comprising of images -->
+        <section class="work large">
+            <a href="https://haruka08.github.io/first-day-repo/">
+            <img
+                src="./assets/screenshot1.jpg"
+                alt="Image of Horiseon Website"
+            />
+            </a>
+            <h3>Horiseon</h3>
+        </section>
 
-      <div class="article">
-        <a href="">
-        <h3>Project I</h3>
-        <img
-          src="./assets/beach-sample.jpg"
-          alt="Sample image"
-        />
-        </a>
-      </div>
+        <section  class="work small">
+            <a href="">
+            <img
+                src="./assets/beach-sample.jpg"
+                alt="Sample image"
+            />
+            </a>
+            <h3>Project I</h3>
+        </section>    
 
-      <div class="article">
-        <a href="">
-        <h3>Project II</h3>
-        <img
-        src="./assets/mountain-sample.webp"
-        alt="Sample image"
-        />
-        </a>
-      </div>
+        <section  class="work small">
+            <a href="">
 
-      <div class="article">
-        <a href="">
-        <h3>Project III</h3>
-        <img
-          src="./assets/sunset-sample.jpg"
-          alt="Sample image" 
-        />
-        </a>
-      </div>
+            <img
+                src="./assets/mountain-sample.webp"
+                alt="Sample image"
+            />
+            </a>
+            <h3>Project II</h3>
+        </section>
 
-      <div class="article">
-        <a href="">
-        <h3>Project IV</h3>
-        <img
-          src="./assets/spring-sample.jpeg"
-          alt="Sample image" 
-        />
-        </a>
-      </div>
+        <section  class="work small">
+            <a href="">
+            <img 
+                src="./assets/sunset-sample.jpg"
+                alt="Sample image" 
+            />
+            </a>
+            <h3>Project III</h3>
+        </section>
 
-      <div class="article large">
-        <a href="">
-        <h3>Project V</h3>
-        <img class="large"
-          src="./assets/snow-sample.jpeg"
-          alt="Sample image" 
-        />
-        </a>
-      </div>
-    </section>
-  
-    <section id="Contact" class="sub-header">
-      <h2>Contacts</h2>
-      <p>E-mail: <a href="mailto:haruka.hashimoto08@gmail.com">haruka.hashimoto08@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/haruka-h-587b41100">Haruka's LinkedIn Profile</a></p>
-      <p>CV: <a href="./assets/Haruka-Hashimoto-DOC.pdf">Haruka's CV</a></p>
-    </section>
-  </main>
+        <section  class="work small">
+            <a href="">
+            <img
+                src="./assets/spring-sample.jpeg"
+                alt="Sample image" 
+            />
+            </a>
+            <h3>Project IV</h3>
+        </section>
 
+        <section  class="work large">
+            <a href="">
+            <img
+                src="./assets/snow-sample.jpeg"
+                alt="Sample image" 
+            />
+            </a>
+            <h3>Project V</h3>
+        </section>
+
+        <!-- last section within main content -->
+        <h2 class="sub-header" id="Contact">Contacts</h2>
+        
+        <section id="info">
+        <p>E-mail:</p>
+        <a href="mailto:haruka.hashimoto08@gmail.com">haruka.hashimoto08@gmail.com</a>
+        <p>LinkedIn:</p>
+        <a href="https://www.linkedin.com/in/haruka-h-587b41100">Haruka's LinkedIn Profile</a>
+        <p>CV:</p>
+        <a href="./assets/Haruka-Hashimoto-DOC.pdf">Haruka's CV</a>
+        </section>
+    </main>
 </body>
 
+<!-- footer -->
 <footer>
   <h3>Thank you for visiting!</h3>
 </footer>

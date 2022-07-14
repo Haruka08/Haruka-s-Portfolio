@@ -1,150 +1,268 @@
-/* color settings */
-:root{
-    --blue: rgb(119, 121, 240);
-    --darkblue: rgb(42, 34, 134);
-    --lightblue: rgb(125, 193, 202);
-    --skyblue: rgb(236, 248, 249);
-}
+/* Settings for elements */
+    /* color settings */
+    :root{
+        --blue: rgb(119, 121, 240);
+        --darkblue: rgb(42, 34, 134);
+        --lightblue: rgb(159, 206, 232);
+        --skyblue: rgb(236, 248, 249);
+        --grey: rgb(136, 136, 136);
+    }
 
-/* margin size to be adjusted within height/width limit stated */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+    /* margin size to be adjusted within height/width limit stated */
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
 
-body {
-    background-color: var(--skyblue,white);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--darkblue,darkblue);
-}
+    /* To show links in the same text color as the rest of the text */
+    a {
+        color: var(--darkblue,darkblue);
+    }
 
-a {
-    color: var(--darkblue,darkblue);
-}
+    /* settings for <body> */
+    body {
+        background-color: var(--skyblue,white);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: var(--darkblue,darkblue);
+    }
 
-.main-header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;
-    width: 100%;
-    background-color: var(--blue,blue);
-    background-image: linear-gradient(to bottom right, var(--blue,blue), var(--lightblue,lightblue));
-}
+    /* setting for footer section */
+    footer {
+        text-align: center;
+        display: block;
+        line-height: 1.5;
+    }
 
-header h1 {
-    flex: 1 0 auto;
-    display: inline;
-    padding: 15px;
-    margin: 15px;
-}
+/* flexboxes */
+    /* flexbox to contain all sections within <header>  */
+    #main-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+        width: 100%;
+        padding: 30px;
+        background-color: var(--blue,blue);
+        background-image: linear-gradient(to bottom right, var(--blue,blue), var(--lightblue,lightblue));
+    }
 
-header menu li {
-    flex: 0 1 auto;
-    display: inline;
-    padding: 15px;
-    margin: 15px;
-}
+    /* specific settings for <ul> within #main-header */
+    #main-header ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: flex-end;
+        list-style-type: none;
+    }
 
-header menu li:hover {
-    background-color: aquamarine;
-}
+    /* flexbox to contain all sections within <main> */
+    #main-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 
-section h2 {
-    display: block;
-    background-color: var(--lightblue,lightblue);
-    text-align: left;
-    padding: 10px
-}
+    /* specific settings for <ul> within #main-header */
+    #info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 
-section p {
-    padding: 10px
-}
+/* specific setting within relevant flexboxes */
+    /* to give space between listed items */
+    #main-header ul li {
+        padding-left: 100px;
+    }
 
-.about-me {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-.about-me p {
-    flex: 0 0 auto;
-    max-width: 70%;
-    max-height: 400px;
-    margin: 10px;
-    line-height: 2;
-}
-.about-me img {
-    flex: 0 0 auto;
-    max-width: 200px;
-    max-height: 300px;
-    margin: 10px;
-    border: 2px solid var(--darkblue,darkblue);
-}
+    /* setting for sub-headers within main content <h2> */
+    .sub-header {
+        flex-direction: column;
+        background-color: var(--blue, blue);
+        padding: 10px;
+        padding-left: 20px;
+        width: 100%;
+    }
 
-.article {
-    display: inline-flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    position: relative;
-    margin: 10px;
-    opacity: 50%;
-}
+    /* settings for <p> wtihin #main-content flexbox */
+    #intro {
+        flex-direction: row;
+        width: 70%;
+        max-height: fit-content;
+        padding: 10px;
+        line-height: 2;
+    }
 
-.article:hover {
+    /* settings for <img> wtihin #main-content flexbox */
+    #profile-photo {
+        flex-direction: row;
+        object-fit: cover;
+        max-width: 250px;
+        max-height: 300px;
+        border: 2px solid var(--darkblue, darkblue);
+        margin: 10px;
+    }
+
+     /* settings for the image/link of each projects/works for class=large */
+   .large img {
+        object-fit: cover;
+        width: 1100px;
+        height: 300px;
+        border: 2px solid var(--darkblue, darkblue);
+        margin: 10px;
+        opacity:
+    }
+
+    /* settings for each projects/works title for class=large */
+    .large h3 {
+        position: relative;
+        bottom: 80px;
+        left: 30px;
+        border: 2px solid var(--darkblue, darkblue);
+        background-color: white;
+        opacity: 50%;
+        width: 160px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* settings for the image/link of each projects/works for class=small */
+    .small img{
+        flex-direction: row;
+        object-fit: cover;
+        width: 520px;
+        height: 300px;
+        border: 2px solid var(--darkblue, darkblue);
+        margin: 10px;
+        opacity: 50%;
+    }
+
+    /* settings for each projects/works title for class=small */
+    .small h3 {
+        position: relative;
+        bottom: 80px;
+        left: 30px;
+        border: 2px solid var(--darkblue, darkblue);
+        background-color: white;
+        opacity: 50%;
+        width: 160px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    /* settings for #info <p> section within #main-content flexbox */
+    #info p{
+        width: 25%;
+        padding: 20px;
+        padding-left: 40px;
+    }
+
+    /* settings for #info <a> section within #main-content flexbox */
+    #info a{
+        width: 75%;
+        padding: 20px;
+    }
+
+/* interactive settings */
+/* settings to images within work when pointer hovers over them */
+#main-content .work img:hover {
     opacity: 100%;
-    box-shadow: 8px 10px 10px 2px grey;
+    box-shadow: 8px 10px 10px 2px var(--grey,grey);
     margin: 5px
 }
 
-.article img {
-    object-fit: cover;
-    width: 482px;
-    height: 300px;
-    border: 2px solid var(--darkblue,darkblue);
-
-}
-
-.article.large img {
-    object-fit: cover;
-    width: 1000px;
-    height: 300px;
-    border: 2px solid var(--darkblue,darkblue);
-
-}
-
-.article h3 {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    padding: 10px;
-    border: 5px solid var(--darkblue,darkblue);
-    color: var(--darkblue,darkblue);
-    background-color: var(--skyblue, white)
-}
-
-footer {
-    text-align: center;
-    display: block;
-    line-height: 1.5;
-}
-
-@media screen and (max-width: 1030px){
-    .article.large img {
-        flex-direction: column;
+/* settings for when the screen size reduces below 1105px */
+@media screen and (max-width: 1105px){
+    #main-content .work img {
         object-fit: cover;
-        width: 482px;
-        max-width:fit-content;
+        width: 480px;
         height: 300px;
     }
 }
 
-@media screen and (max-width: 768px){
-.about-me {
-        flex-direction: column;
+/* settings for when the screen size reduces below 1000px */
+@media screen and (max-width: 1000px){
+    #main-content .work img {
+        object-fit: cover;
+        width: 400px;
+        height: 200px;
+    }
+
+/* settings for when the screen size reduces below 900px */
+@media screen and (max-width: 900px){
+    #main-content .work img {
+        object-fit: cover;
+        width: 700px;
+        height: 200px;
+    }
+    #intro {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
     }
 }
 
+/* settings for when the screen size reduces below 700x */
+@media screen and (max-width: 700px){
+    #main-header {
+        display: block;
+        height: fit-content;
+    }
+    #main-header ul li {
+        padding: 20px;
+        padding-left: 0px;
+    }
+    #main-content .work img {
+        object-fit: cover;
+        width: 480px;
+        height: 200px;
+    }
+    #intro {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+}
+
+/* settings for when the screen size reduces below 500px */
+@media screen and (max-width: 500px){
+    #main-header {
+        display: block;
+        height: fit-content;
+        padding: 10px;
+        text-align: center;
+    }
+    #main-header ul {
+        display: block;
+    }
+    #main-header ul li {
+        padding-left: 0px;
+        padding: 10px;
+        text-align: center;
+    }
+    #main-content {
+        text-align: center;
+    }
+    #main-content .work img {
+        object-fit: cover;
+        width: 270px;
+        height: 200px;
+    }
+    #intro {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+    }
+    #info {
+        display: block;
+    }
+    #info p{
+        width: 100%;
+    }
+    #info a{
+        width: 100%;
+    }
+}
