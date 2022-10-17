@@ -190,6 +190,7 @@
         width: 400px;
         height: 200px;
     }
+}
 
 /* settings for when the screen size reduces below 900px */
 @media screen and (max-width: 900px){
